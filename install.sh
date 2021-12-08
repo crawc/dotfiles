@@ -18,4 +18,7 @@ else
     sudo apt update && sudo apt -y install vim-scripts
 fi
 
+# Set the timezone to America/New_York
+sudo timedatectl set-timezone America/New_York
+
 echo "Installed"
