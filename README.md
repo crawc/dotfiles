@@ -19,3 +19,8 @@ cd ~/dotfiles
 ```
 ./uninstall.sh
 ```
+
+### Update just the bashrc file
+```
+wget https://raw.githubusercontent.com/crawc/dotfiles/master/.bashrc -O ~/.bashrc
+```
