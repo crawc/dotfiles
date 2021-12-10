@@ -73,7 +73,7 @@ if [ "$color_prompt" = yes ]; then
 	info_color='\[\033[1;31m\]'
 	prompt_symbol=💀
     fi
-    PS1=$prompt_color'┌──${debian_chroot:+($debian_chroot)──}('$info_color'\u${prompt_symbol}\h'$prompt_color')-'$gray'[\D{%F %I:%M:%S %p}]'$prompt_color'─[\[\033[0;1m\]\w'$prompt_color']\n│\n'$prompt_color'└─'$info_color'\$\[\033[0m\] '
+    PS1=$prompt_color'\n\n┌──${debian_chroot:+($debian_chroot)──}('$info_color'\u${prompt_symbol}\h'$prompt_color')-'$gray'[\D{%F %I:%M:%S %p}]'$prompt_color'─[\[\033[0;1m\]\w'$prompt_color']\n│\n'$prompt_color'└─'$info_color'\$\[\033[0m\] '
     #PS1=$prompt_color'┌──${debian_chroot:+($debian_chroot)──}('$info_color'\u${prompt_symbol}\h'$prompt_color')-[\[\033[0;1m\]\w'$prompt_color']\n'$prompt_color'└─'$info_color'\$\[\033[0m\] '
     # BackTrack red prompt
     #PS1='${debian_chroot:+($debian_chroot)}\[\033[01;31m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
