@@ -1,12 +1,9 @@
 # Installation
-### Download and change folder
+### Change folder, download, and install.
 ```
 cd ~ && git clone https://github.com/crawc/dotfiles.git && cd dotfiles && ./install.sh
 ```
-### Run install
-```
-./install.sh
-```
+
 
 # Uninstallation
 
