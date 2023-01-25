@@ -23,5 +23,5 @@ wget https://raw.githubusercontent.com/crawc/dotfiles/master/.bashrc -O ~/.bashr
 ```
 or bash_aliases
 ```
-wget https://github.com/crawc/dotfiles/blob/master/.bash_aliases -O ~/.bashrc
+wget https://github.com/crawc/dotfiles/blob/master/.bash_aliases -O ~/.bash_aliases
 ```
