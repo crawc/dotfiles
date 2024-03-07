@@ -13,4 +13,17 @@ done
 # Set the timezone to America/New_York
 sudo timedatectl set-timezone America/New_York
 
+echo "Do you want to install Docker? (y/n)"
+read answer
+
+if [ "$answer" == "y" ]; then
+    # Make the script executable
+    chmod +x install-docker.sh
+
+    # Run the script
+    ./install-docker.sh
+else
+    echo "Docker installation aborted."
+fi
+
 echo "Installed"
