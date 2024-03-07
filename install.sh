@@ -17,6 +17,9 @@ sudo chmod 440 /etc/sudoers.d/$current_user
 # Set the timezone to America/New_York
 sudo timedatectl set-timezone America/New_York
 
+sudo -i -u $current_user
+update
+
 echo "Do you want to install Docker? (y/n)"
 read answer
 
@@ -29,8 +32,3 @@ if [ "$answer" == "y" ]; then
 else
     echo "Docker installation aborted."
 fi
-
-echo "Installed"
-
-sudo -i -u $current_user
-update
