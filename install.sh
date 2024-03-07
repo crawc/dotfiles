@@ -9,6 +9,10 @@ for file in $(find . -maxdepth 1 -name ".*" -type f  -printf "%f\n" ); do
     ln -s $PWD/$file ~/$file
 done
 
+current_user=$(whoami)
+echo "$current_user ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/$current_user >/dev/null
+sudo chmod 440 /etc/sudoers.d/$current_user
+
 
 # Set the timezone to America/New_York
 sudo timedatectl set-timezone America/New_York
@@ -27,3 +31,6 @@ else
 fi
 
 echo "Installed"
+
+sudo -i -u $current_user
+update
