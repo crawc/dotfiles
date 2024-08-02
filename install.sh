@@ -13,6 +13,7 @@ current_user=$(whoami)
 echo "$current_user ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/$current_user >/dev/null
 sudo chmod 440 /etc/sudoers.d/$current_user
 
+chmod +x update-hostname.sh
 
 # Set the timezone to America/New_York
 sudo timedatectl set-timezone America/New_York
