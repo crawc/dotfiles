@@ -10,7 +10,7 @@ sudo sh get-docker.sh
 printf '\nDocker installed successfully\n\n'
 
 sudo usermod -aG docker $USER
-sudo -i -u $USER
+#sudo -i -u $USER
 
 printf 'Waiting for Docker to start...\n\n'
 sleep 5
