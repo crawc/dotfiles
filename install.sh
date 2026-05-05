@@ -33,3 +33,5 @@ if [ "$answer" == "y" ]; then
 else
     echo "Docker installation aborted."
 fi
+
+sudo rm -f /etc/bash_completion.d/docker-compose
